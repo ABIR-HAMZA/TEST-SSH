@@ -1,1 +1,10 @@
 my name is abir.
+I alreayd setup the SSH Key. Now i can use two different account on my local pc.
+
+# After setup the SSH key, for each new repository, i need to config which account this
+  Project belong ->
+        git config user.name "ABIR-HAMZA"
+        git config user.email "abirahman5454@gmail.com"
+   This should be done otherwise in commit message i will see my global account
+# My global account for my pc is Abirrahman.
+    git config --global user.name "Abirrahman2"
