@@ -8,3 +8,17 @@ I alreayd setup the SSH Key. Now i can use two different account on my local pc.
    This should be done otherwise in commit message i will see my global account
 # My global account for my pc is Abirrahman.
     git config --global user.name "Abirrahman2"
+
+# My all old projects used https, now i need move to SSH commands.
+    1. Open the project folder and in terminal write->
+        git remoter -v (this will check the remote that i am currently working on)
+        git remote set-url origin git@github-personal:Abirrahman2/reponame.git
+        and also set identity (so important)
+        git config user.name "Abirrahman2"
+        git config user.email "abirhamza@gmail.com"
+        by doing this i am converting from https to ssh.
+# Very Important
+    1. Now in future if i want to create any repository, i need to specially config which account i should use.
+        git init
+        git config user.name "provide name"
+        git config user.email "provide email"
